@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城首頁 - 國際商務電視台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="__TMPL__Public/shop/css/sindex.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__TMPL__Public/shop/js/jquery-1.8.3.js"></script>
+<php> $a = 0;</php>
+</head>
+<body style="background:#fff;">
+<tc_include file="Public:membernav" />
+    <!-- container_2 -->
+    <div class="container_2">
+    	<ul class="subnavmain">
+        	<li>
+            	<a href="#">食品</a>
+                <div class="menu">
+                	
+                    <p class="line_1"></p>
+                    <div class="navContent">
+                            	<foreach name="nlmy" item="vo">
+
+                    	<dl class="navType">
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+            	<a href="#">能源礦產</a>
+            	<div class="menu">
+                	
+                    <p class="line_1"></p>
+                    <div class="navContent">
+                            	<foreach name="ckzz" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<a href="#">石化</a>
+            	<div class="menu">
+                	
+                    <p class="line_1"></p>
+                    <div class="navContent">
+                            	<foreach name="drrq" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<a href="#">建築</a>
+                <div class="menu">
+                	
+                    <p class="line_1"></p>
+                    <div class="navContent">
+                            	<foreach name="jzfc" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<a href="#">服裝</a>
+                <div class="menu">
+                	
+                    <p class="line_1"></p>
+                    <div class="navContent">
+                            	<foreach name="pfls" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<a href="#">IT</a>
+                <div class="menu">
+                	
+                    <p class="line_2"></p>
+                    <div class="navContent">
+                            	<foreach name="rjxx" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<a href="#">文化體育</a>
+                <div class="menu">
+                	
+                    <p class="line_1"></p>
+                    <div class="navContent">
+                            	<foreach name="wtyl" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+            <li style=" border:none;">
+            	<a href="#" style="line-height:45px;">製造</a>
+                <div class="menu">
+                	
+                    <p class="line_3"></p>
+                    <div class="navContent">
+                            	<foreach name="gjzz" item="vo">
+                    	<dl class="navType">
+                        	
+                        	<dt><a href="memberinfo.html?id={$vo.id}">
+                            <img src="{$vo.mlogo}" width="90" height="60" />
+                            </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+                            	</foreach>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <script type="text/javascript">
+        	$(".container_2 ul.subnavmain li").mousemove(function(){
+				$(this).addClass("hover");	
+				$(this).find(".menu").show();
+				
+				var _top = $(this).position().top;
+				$("p.line_1").stop();
+				$("p.line_1").animate({top:_top},10);
+				
+				$("p.line_2").stop();
+				$("p.line_2").animate({top:_top},10);
+				
+				$("p.line_3").stop();
+				$("p.line_3").animate({top:_top},10);
+				
+				var index = $(this).index();
+				$(".menu").eq(index).show().siblings(".menu").hide();
+				$(this).addClass("bg_1").siblings().removeClass("bg_1 active_1");
+				
+			}).mouseout(function(){
+				$(this).removeClass("hover");	
+				$(this).find(".menu").hide();
+				$(this).removeClass("bg_1");
+			});
+        </script>
+        <div id="banner">
+        	<ul class="con">
+				<foreach name="wuflist" item="vo">
+                <php>$a++;</php>
+				<li <php>if($a == 1){echo 'style="display: list-item;"';}else{echo 'style="display: none;"';}</php>>
+                	<a href="activityinfo.html?id={$vo.id}">
+                		<img src="{$vo.simg}" alt="" width="600" height="325" />
+                	</a>
+                </li>
+                
+			</foreach>
+            </ul>
+            <ul class="but">
+            	<li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <script type="text/javascript">
+				var index = 0;
+				var playCount = null;
+				
+            	$(".but li").hover(function(){
+					clearInterval(playCount);
+					$(this).addClass("current").siblings().removeClass("current");
+					index = $(this).index();
+					
+					$(".con li").eq(index).fadeIn().siblings().fadeOut();
+					
+				}).mouseout(function(){
+					
+					auto_play();
+					
+				});
+							
+				function auto_play(){
+					
+					playCount=setInterval(function(){
+						index++;
+						if(index > 3){index=0;}	
+						$(".but li").eq(index).addClass("current").siblings().removeClass("current");	
+						$(".con li").eq(index).fadeIn().siblings().fadeOut();
+					},5000);
+				};	
+				auto_play();
+            </script>
+        </div>
+        <div id="news">
+        	<div class="title">
+            	<div class="left_1">最新消息</div>
+                <div class="more"><a href="activity">more</a> >></div>
+            </div>
+            <ul class="list"><foreach name='newmsg' item='vo'>
+
+				<li><a href="infoinfo.html?id={$vo.id}">{$vo.comm}</a></li>
+
+			</foreach>
+            </ul>
+        </div>
+    </div>
+    <!-- //container_2 -->
+    <!-- container_2 最新產品 -->
+    <div class="container_2">
+    	<div class="news_release">
+        	<div class="title_1">
+            	<div class="left_2">最新產品</div>
+            	<div class="more_1"><a href="#">more</a>&nbsp;&nbsp;>></div>
+            </div>
+            <p></p>
+            <div class="main">
+            <foreach name="prolist" item="vo">
+            	<dl class="list_1">
+               		<dt><a href="productinfo.html?id={$vo.id}"><img src="{$vo.pimg}" alt="img" width="137" height="135" /></a></dt>
+                    <dd>產品名稱：<a href="productinfo.html?id={$vo.id}">{$vo.pname}</a></dd>
+                    <dd style="color:#8e8e8e;">所属會員：{$vo.mname}</dd>
+                    <dd><a href="productinfo.html?id={$vo.id}">Detail</a></dd>
+                </dl>
+
+		</foreach>
+        
+        
+                
+            </div>
+        </div>
+        <div class="hot_industry">
+        	<div class="title_2">推薦</div>
+            <ul class="list_2">
+			<foreach name="tuimsg" item="vo">
+
+				<li><a href="infoinfo.html?id={$vo.id}">{$vo.comm}</a></li>
+
+			</foreach>
+            </ul>
+        </div> 
+    </div>
+    <!-- //container_2 最新產品 -->
+    <!-- container_2 推薦產品 -->
+    <div class="container_2">
+    	<div class="news_release">
+        	<div class="title_1">
+            	<div class="left_2">推薦產品</div>
+            </div>
+            <p></p>
+            <div class="main">
+            <foreach name="tuiprolist" item="vo">
+
+            	<div class="list_3">
+                	<div class="image_1"><a href="productinfo.html?id={$vo.id}"><img src="{$vo.pimg}" width="250" height="250" /></div>
+                    <p style="background:none;"><a href="productinfo.html?id={$vo.id}">{$vo.pname}</br>介绍：{$vo.comm}</a></p>
+                </div>
+                
+	 	  	</foreach>
+            </div>
+        </div>
+        <div class="hot_industry">
+        	<div class="title_2">最新成員</div>
+            <ul class="list_2">
+	 		<foreach name="newmember" item="vo">
+	 			<li><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></li>
+	 		</foreach>
+            </ul>
+        </div> 
+    </div>
+    <!-- //container_2 推薦產品 -->
+    <!-- container_3 產品展示 -->
+    <div class="container_3">
+    	<div class="product_display">產品</div>
+        <ul class="product_list">
+            <foreach name="zshiprolist" item="vo">
+            	<li>
+                	<a href="productinfo.html?id={$vo.id}"><img src="{$vo.pimg}" width="123" height="123" />
+                </li>
+                
+	 	  	</foreach>
+        </ul>
+    </div>
+    <!-- //container_3 產品展示 -->
+    <!-- container_2 推薦會員 -->
+    <div class="container_2">
+    	<div class="news_release" style="width:999px;">
+        	<div class="title_1">
+            	<div class="left_2">特色會員</div>
+            </div>
+            <p style="width:1001px;"></p>
+            <div class="main" style="width:999px; height:250px; background:none;">
+            
+	 	  	  <foreach name="tuimember" item="vo">
+				<dl class="list_4">
+                	<dt><a href="memberinfo.html?id={$vo.id}"><img src="{$vo.mlogo}" /></a></dt>
+                    <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                </dl>
+	 	  	  </foreach>
+            </div>
+        </div>
+    </div>
+    <!-- //container_2 推薦會員 -->
+    <!-- container_2 分类 -->
+    <div class="container_4">
+    	<div class="left_3" style="margin-right:10px;">
+        	<div class="title_2">
+            	<div class="tit">食品</div>
+            </div>
+            <foreach name="listnlmy" item="vo">
+            <dl class="list_5">
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+            </dl>
+           	</foreach>
+            
+        </div>
+        
+        <div class="left_3">
+        	<div class="title_2">
+            	<div class="tit">能源礦產</div>
+            </div>
+            <foreach name="listckzz" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+           
+        </div>
+    </div>
+    <!-- //container_2 分类  -->
+    <!-- container_2 分类 -->
+    <div class="container_4">
+    	<div class="left_3" style="margin-right:10px;">
+        	<div class="title_2">
+            	<div class="tit">石化</div>
+            </div>
+            
+            <foreach name="listdrrq" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+        </div>
+        
+        <div class="left_3">
+        	<div class="title_2">
+            	<div class="tit">建築</div>
+            </div>
+           
+            <foreach name="listjzfc" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+        </div>
+    </div>
+    <!-- //container_2 分类  -->
+    <!-- container_2 分类 -->
+    <div class="container_4">
+    	<div class="left_3" style="margin-right:10px;">
+        	<div class="title_2">
+            	<div class="tit">服裝</div>
+            </div>
+            
+            <foreach name="listpfls" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+        </div>
+        
+        <div class="left_3">
+        	<div class="title_2">
+            	<div class="tit">IT</div>
+            </div>
+            
+            <foreach name="listrjxx" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+        </div>
+    </div>
+    <!-- //container_2 分类  -->
+    <!-- container_2 分类 -->
+    <div class="container_4" style="margin-bottom:23px;">
+    	<div class="left_3" style="margin-right:10px;">
+        	<div class="title_2">
+            	<div class="tit">文化體育</div>
+            </div>
+            
+            
+            <foreach name="listwtyl" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+        </div>
+        
+        <div class="left_3">
+        	<div class="title_2">
+            	<div class="tit">製造</div>
+            </div>
+           
+            <foreach name="listgjzz" item="vo">
+                    	<dl class="list_5">
+                        	
+            	<dt><a href="memberinfo.html?id={$vo.id}">
+                <img src="{$vo.mlogo}" width="161" height="82" />
+                </a></dt>
+                            <dd><a href="memberinfo.html?id={$vo.id}">{$vo.mname}</a></dd>
+                        </dl>
+            </foreach>
+        </div>
+    </div>
+<tc_include file="Public:footer"/>
+    <!-- //container_2 分类  -->
+</body>
+</html>
