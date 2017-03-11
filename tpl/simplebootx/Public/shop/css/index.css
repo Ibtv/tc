@@ -25,7 +25,7 @@
 .container .content .menu_left .content_produ .title_produc h3 { float:left; padding:3px 25px 0 20px; line-height:31px; color:#fffffb; font-family:Arial; font-size:20px; font-weight:100;}
 .container .content .menu_left .content_produ .title_produc a { float:left; padding-top:10px; height:21px; color:#fffffb; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; font-size:20px; font-weight:700;}
 .container .content .menu_left .content_produ .menu_produc { width:958px; overflow:hidden; border-bottom:#bebbb9 1px solid; border-left:#bebbb9 1px solid; border-right:#bebbb9 1px solid;}
-.container .content .menu_left .content_produ .menu_produc .btn_left { float:left; width:19px; height:300px; background:url(../images/btn_left.png) 6px 151px no-repeat;}
+.container .content .menu_left .content_produ .menu_produc .btn_left { float:left; width:19px; height:300px; background:url(../img/btn_left.png) 6px 151px no-repeat;}
 .container .content .menu_left .content_produ .menu_produc ul.btn_center { float:left; width:900px; height:283px; padding:17px 10px 0;}
 .container .content .menu_left .content_produ .menu_produc ul.btn_center li { float:left; width:160px; height:270px; margin:0 10px;}
 .container .content .menu_left .content_produ .menu_produc ul.btn_center li .tit_li { width:160px; height:27px;overflow: hidden;}
@@ -36,7 +36,7 @@
 .container .content .menu_left .content_produ .menu_produc ul.btn_center li .tip_pro { padding:0 4px; width:152px; overflow:hidden;}
 .container .content .menu_left .content_produ .menu_produc ul.btn_center li .tip_pro p {line-height:24px; color:#656666; font-size:14px; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; overflow:hidden; text-overflow:ellipsis;}
 .container .content .menu_left .content_produ .menu_produc ul.btn_center li .tip_pro p span { line-height:24px; color:#124359; font-size:16px;}
-.container .content .menu_left .content_produ .menu_produc .btn_right { float:left; width:19px; height:300px; background:url(../images/btn_right.png) 4px 151px no-repeat;}
+.container .content .menu_left .content_produ .menu_produc .btn_right { float:left; width:19px; height:300px; background:url(../img/btn_right.png) 4px 151px no-repeat;}
 
 .container .content .menu_left .content_produ .menu_produc .big_left { float:left; width:305px; height:325px; padding:10px; border-bottom:#bebbb9 1px solid;}
 .container .content .menu_left .content_produ .menu_produc .big_left img { width:305px; height:325px;}
@@ -65,15 +65,6 @@
 
 
 
-/* bg */
-.bg_a { background:#621433!important;}
-.bg_b { background:url(../images/bg_li_b.jpg) 33px 16px no-repeat!important;}
-.bg_c { background:url(../images/bg_li_c.jpg) 33px 16px no-repeat!important;}
-.bg_d { background:url(../images/bg_li_d.jpg) 28px 16px no-repeat!important;}
-.bg_e { background:url(../images/bg_li_e.jpg) 28px 15px no-repeat!important;}
-.bg_f { background:url(../images/bg_li_f.jpg) 28px 15px no-repeat!important;}
-.bg_g { background:url(../images/bg_li_g.jpg) 28px 14px no-repeat!important;}
-.bg_h { background:url(../images/bg_li_h.jpg) 28px 14px no-repeat!important;}
 
 
 /* color */

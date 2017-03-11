@@ -419,7 +419,7 @@ img.onerror=null;
                     $producezx = sp_sql_produce("field:id,pimg,mname,pname,comm;order:createtime DESC;limit:4;");
                 </php>
                 <foreach name="producezx" item="zx">                    
-                	<div class="discount" style="padding-top:21px;">
+                	<div class="discount" style="padding-top:16px;">
                         <div class="title_dis" style="border-bottom:#368acb 2px solid;">
                         	<h3 style="color:#368acb; font-family:'微软雅黑'; font-weight:500; font-size:20px;">{$zx.pname}</h3>
                         </div>
@@ -441,18 +441,18 @@ img.onerror=null;
                         	$approvezx = sp_sql_approve("field:id,htypename,mlogo,mname;order:createtime DESC;limit:4;");
                         </php>
                         <foreach name="approvezx" item="zx">
-                        <div class="discount" style="padding-top:21px;">
+                        <div class="discount" style="padding-top:15px;">
                             <div class="title_dis" style="border-bottom:#368acb 2px solid;">
                                 <h3 style="color:#368acb; font-family:'微软雅黑'; font-weight:500; font-size:20px;">{$zx.mname}</h3>
                             </div>
                             <div class="content_dis">
                                 <div class="img_dis">
-                                <a href="{:u('memberprod/productinfo',array('id'=>$zx['id']))}" title="{$zx.mname}">
+                                <a href="{:u('memberprod/memberinfo',array('id'=>$zx['id']))}" title="{$zx.mname}">
                                     <img onerror="nofind();" src="{$zx.mlogo}" alt="{$zx.mname}" title="{$zx.mname}"/>
                                 </a>
                                 </div>
                                 <div class="msg_dis">
-                                    <a href="{:u('memberprod/productinfo',array('id'=>$zx['id']))}" title="{$zx.htypename}">{$zx.htypename}</a> 
+                                    <a href="{:u('memberprod/memberinfo',array('id'=>$zx['id']))}" title="{$zx.htypename}">{$zx.htypename}</a> 
                                     <p>{$zx.comm}</p>                   
                                 </div>
                             </div>

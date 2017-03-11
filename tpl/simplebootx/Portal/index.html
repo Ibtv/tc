@@ -1,72 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="zh-TW">
     <meta name="baidu-site-verification" content="y7Qncx6IqE" />
 	<title>{$site_name}</title>
-    <meta name="author" content="Powerless"> 
-    <meta name="Copyright" content="{$site_seo_title}">
-	<meta name="keywords" content="{$site_seo_keywords}" />
-	<meta name="description" content="{$site_seo_description}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="__TMPL__Public/style/public.css"/>
-    <link rel="stylesheet" type="text/css" href="__TMPL__Public/style/main_style.css"/>
-	<link rel="icon" href="__TMPL__Public/images/ico.ico" type="image/ico">
+
+	<tc_include file="Public:header" />
+	<link href="__TMPL__Public/css/index.css" rel="stylesheet">
     
 	<script type="text/javascript" src="__TMPL__Public/sjs/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="__TMPL__Public/sjs/ScrollPic.js"></script>
     <script type="text/javascript" src="__TMPL__Public/sjs/jquery.event.drag-1.5.min.js"></script>
     <script type="text/javascript" src="__TMPL__Public/sjs/jquery.touchSlider.js"></script>
-    <script type="text/javascript" language="javascript">  
-	function nofind(){
-	var img=event.srcElement;
-	img.src="__TMPL__Public/images/default_tupian1.png";
-	img.onerror=null; 
-	}
-	</script>
 </head>
 
 <body>
-<div id="header">
-    	<div id="topnav">
-        	<a href="http://sc.ibtv.cc">中文(简)</a> | 
-        	<a href="http://tc.ibtv.cc">中文(繁)</a> | 
-            <a href="http://en.ibtv.cc">English</a> | 
-            <a href="http://ar.ibtv.cc">العربية</a> | 
-            <a href="http://fr.ibtv.cc">français</a> | 
-            <a href="http://es.ibtv.cc">español</a> | 
-            <a href="http://ru.ibtv.cc">русский</a> | 
-            <a href="http://pt.ibtv.cc">português</a> | 
-            <a href="http://de.ibtv.cc">Deutsch</a>| 
-            <a href="http://kr.ibtv.cc">한국의</a>| 
-            <span><a href="{:u('list/index',array('id'=>300))}">聯繫我們</a></span>
-        </div>
-        <div id="header_main">
-        	<div id="logo">
-            	<img  onerror="nofind();" src="__TMPL__Public/images/logo2.png"/>
-            </div>
-            <div id="search">
-            <form role="form" method="post" action="{:u('/Search')}">           
-            	<input type="text" class="searchInput" name="keyword" required="required"/>
-                <input type="submit" class="searchbar" value="搜索" />
-            </form>
-            </div>
-        </div>
-        <div class="nav">
-        	<a href="{:u('list/index',array('id'=>110))}" title="洲際新聞">洲際新聞</a> | 
-            <a href="{:u('list/index',array('id'=>120))}" title="國際貿易">國際貿易</a> | 
-            <a href="{:u('list/index',array('id'=>130))}" title="國際投資">國際投資</a> | 
-            <a href="{:u('list/index',array('id'=>140))}" title="科技">科技</a> | 
-            <a href="{:u('list/index',array('id'=>150))}" title="旅遊">旅遊</a> | 
-            <a href="{:u('list/index',array('id'=>160))}" title="社會">社會</a> | 
-            <a href="{:u('list/index',array('id'=>170))}" title="高端訪談">高端訪談</a> | 
-            <a href="{:u('list/index',array('id'=>180))}" title="商務指南">商務指南</a> | 
-            <a href="{:u('list/index',array('id'=>190))}" title="環球商機">環球商機</a> | 
-            <a href="/shop" title="會員商城">會員商城</a>
-        </div>
-        <!-- //nav -->
-    </div>
+
+<tc_include file="Public:main" />
     
     <div id="wrap">
     	<!-- container -->
@@ -6448,30 +6397,10 @@
         </div>
         <!-- //高端访谈 -->
     </div>
-    <div id="footer">
-    	<div class="foot">
-        	<div class="sidebar_left">
-            	<div class="list_6">
-                <a>ICP message：</a>
-                <a href="http://www.miitbeian.gov.cn" target="_blank">{$site_icp}</a>
-                </div>
-                <div class="list_6" style="text-align:center;">
-                <a>Copyright © 2014</a>
-                <a href="http://www.ibtv.cc/" target="_blank">International Business Television</a>
-                <a>by</a>
-                <a href="http://t.qq.com/wzxaini9" target="_blank">"Powerless"</a>
-                </div>
-            </div>
-            <div class="sidebar_right">
-	        		<a href="http://info.flagcounter.com/s31P" target="_blank">
-                    <img  onerror="nofind();" onerror="nofind();" src="http://s11.flagcounter.com/count/s31P/bg_14445B/txt_FFFFFF/border_FFFFFF/columns_3/maxflags_15/viewers_3/labels_1/pageviews_1/flags_2/" alt="Flag Counter" border="0">
-                    </a>
-            </div>
-        </div>
-    </div>
-    
-      <div id="backtotop"><i class="fa fa-arrow-circle-up"></i></div>
-      {$site_tongji}
+
+<tc_include file="Public:links" />
+<tc_include file="Public:footer" />
+<tc_include file="Public:scripts" />
 </body>
 </html>
 

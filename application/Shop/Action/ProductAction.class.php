@@ -9,14 +9,7 @@ class ProductAction extends MemberbaseAction {
         $this->produce_model=D("Produce");
     }
 
-    public function test(){
-        //$test = M('Produce','i_','mysql://root:ibtv_rootmysql@localhost/ibtv_cmf');
-        $test = M("ibtv_cmf.Produce","i_");
-        $list = $test -> limit(5) -> select();
-        dump($list);
-
-        $this->display(":test");
-    }
+   
     //会员产品添加
 	public function addprod(){
         $userid = sp_get_current_userid();

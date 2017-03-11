@@ -11,7 +11,7 @@ body a { text-decoration:none;}
 #header #topnav { height:45px; border:#a2aba6 1px solid;}
 #header #topnav a, #header #topnav span a, #header .nav a { line-height:45px; font-size:18px; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; color:#000;}
 #header #topnav a { padding:0 5px;}
-#header #topnav span { padding-left:130px;}
+#header #topnav span { float: right;}
 #header #header_main { width:1200px; height:101px;}
 #header #header_main #logo, #header #header_main #logo img { width:203px; height:74px;}
 #header #header_main #logo { float:left; padding:13px 0 0 96px;}

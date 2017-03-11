@@ -5,7 +5,6 @@
      
 	<meta charset="UTF-8">
 	<title>{$post_title}┊{$term.name}┊{$second['name']}┊{$site_name}</title>
-    <meta http-equiv="Content-Language" content="zh-tw">
     <meta name="author" content="Powerless"> 
 		<meta name="keywords" content="{$post_keywords}" />
 		<meta name="description" content="{$post_excerpt}">
@@ -19,12 +18,6 @@
 <div class="container tc-main">
 	<div class="row">
 		<div class="span9">
-			<ol class="breadcrumb">
-        <a href="{$site_host}">首頁</a>┊
-        <a href="{:u('list/index',array('id'=>$term['parent']))}">{$second['name']}</a> ┊
-        <a href="{:u('list/index',array('id'=>$term['term_id']))}">{$term.name}</a> ┊
-        內容
-                    </ol>
 			<div class="tc-box first-box article-box">
 		    	<h2>{$post_title}</h2>
 		    	<div class="article-infobox">
@@ -49,21 +42,7 @@
 		    </div>
 		    
 		</div>
-		<div class="span3">
-			<div class="tc-box first-box">
-				<div class="headtitle">
-	          		<h2>分享</h2>
-	          	</div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54acf10b5c282aae" async="async"></script>
-<style type="text/css">
-.at-share-tbx-element .at-share-btn {
-margin: 0 3px 0 0;
-background: none;
-}
-</style>
-<div class="addthis_sharing_toolbox"></div>    
-        	</div>
-        	
+		<div class="span3">        	
         	<div class="tc-box">
 	        	<div class="headtitle">
 	        		<h2>熱門文章</h2>
@@ -118,19 +97,12 @@ background: none;
 					</div>
                 </div>
 			</div>
-        	<div class="tc-box">
-	        	<div class="posts">
-	        		<a href="http://info.flagcounter.com/s31P" target="_blank">
-                    <img src="http://s11.flagcounter.com/count/s31P/bg_FFFFFF/txt_428BCA/border_FFFFFF/columns_3/maxflags_15/viewers_3/labels_1/pageviews_1/flags_2/" alt="Flag Counter" border="0">
-                    </a>
-		        </div>
-			</div>
 		</div>
 		
 	</div>
               
-<tc_include file="Public:footer"/>
 </div>
+<tc_include file="Public:footer"/>
 
 <tc_include file="Public:scripts"/>
 </body>

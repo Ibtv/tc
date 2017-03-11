@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>{$name}┊{$site_name}</title>
-    <meta http-equiv="Content-Language" content="zh-TW">
 	<meta name="keywords" content="{$seo_keywords}" />
 	<meta name="description" content="{$seo_description}">
     <tc_include file="Public:head" />
@@ -22,34 +21,6 @@ for($i = 0;$i < sizeof($first);$i++)
 <body>
 <tc_include file="Public:nav" />
 <div class="container">
-	
-	
-    <div class="pg-opt pin">
-        <div class="col-md-12">
-                    <div style=" float:right;">
-                        <ol style="margin-top: 34px;">
-                        <a href="__ROOT__/" style="color: #59b2e5;">首頁</a> ┊
-                        {$name}
-                        </ol>
-        			</div>
-                        <h2>{$name}</h2>
-                    <h5 style="margin-left:50px;white-space: nowrap;">
-                            <php>
-                                $first = sp_get_terms($cat_id);
-                                for($i = 0;$i < sizeof($first);$i++)
-                                {
-                                    if($cat_id == $first[$i][parent])
-                                    {
-                                    </php>
-                                         <a href="{:u('list/index',array('id'=>$first[$i][term_id]))}" style="color: #59b2e5;">{$first[$i][name]}</a>┊
-                                    <php>
-                                    }
-                                }
-                        </php>
-                    </h5>
-                </div>
-    </div>
-    
     <div class="container">
         <div>
              <php>
@@ -105,8 +76,8 @@ for($i = 0;$i < sizeof($first);$i++)
     </div>
     
     
-    <tc_include file="Public:footer" />
 </div>
+    <tc_include file="Public:footer" />
 
     
 <!-- JavaScript -->
